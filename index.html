@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./src/bundle.js"></script>
+    <!-- <script defer src="./dist/bundle.js"></script> -->
+    <link rel="stylesheet" href="./src/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/myStyle.css" />
+  </head>
+  <body>
+    <section class="container my-2 text-center quiz-section">
+      <div class="row">
+        <div class="col">
+          <div class="header">
+            <div>
+              <img
+                class="logo border-radius-6"
+                src="./src/assets/pic/Logo.png"
+                alt="Logo"
+              />
+            </div>
+            <div class="flex-container">
+              <div class="score">Score: 0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-3 text-center quiz-section">
+      <div class="row prime-bg border-radius-6 box-shadow level-name">
+        <div class="col my-1 level">Разминка</div>
+        <div class="col my-1 level">Воробьиные</div>
+        <div class="col my-1 level">Лестные птицы</div>
+        <div class="col my-1 level">Певчие птицы</div>
+        <div class="col my-1 level">Хищные птицы</div>
+        <div class="col my-1 level">Морские птицы</div>
+      </div>
+    </section>
+
+    <section
+      class="container my-3 text-center quest-block border-radius-6 box-shadow quiz-section"
+    >
+      <div class="row prime-bg allign-center">
+        <div class="col-sm-4 my-2 picture-box">
+          <img
+            class="border-radius-6 img"
+            src="./src/assets/pic/UnknownBird.png"
+            alt="unknown bird"
+          />
+        </div>
+        <div class="col-sm-8 my-2">
+          <div class="answer-block__container">
+            <div class="border-bottom align-start rem-2">****</div>
+            <div class="py-1 align-start audio-quest" controls></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container text-center variants-block quiz-section">
+      <div class="row allign-center">
+        <div class="col-md-6 my-1">
+          <div class="prime-bg border-radius-6 answer-block box-shadow"></div>
+        </div>
+        <div class="col-md-6 my-1">
+          <div class="prime-bg border-radius-6 about-block box-shadow">
+            <p>
+              Послушайте плеер <br />
+              и выбирите птицу
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container text-center my-1 button-block quiz-section">
+      <div class="row allign-center">
+        <button
+          class="col-12 my-2 default-bg border-radius-6 button box-shadow"
+        >
+          Next Level
+        </button>
+      </div>
+    </section>
+
+    <section class="final-field container prime-bg allign-center">
+      <div class="row allign-center">
+        <div class="col-md-12 allign-center rem-3 congratulation">
+          Congratulations!
+        </div>
+        <div class="col-md-12 allign-center rem-2 final-score">
+          Your score is 0 out of 30
+        </div>
+        <button class="border-radius-6 button button__again my-4">
+          Try again
+        </button>
+      </div>
+    </section>
+
+    <section class="container-fluid start-bg start-section">
+      <div class="modal-window hidden"></div>
+      <div class="row">
+        <header class="col-xl-12">
+          <div class="start-section__wrapper my-3">
+            <button class="start-quiz border-radius-6">Start Quiz</button>
+            <div class="flex-container">
+              <div class="language__Ru mx-2">RU</div>
+              <div class="language__En mx-2">EN</div>
+              <img
+                class="border-radius-6 start-section__logo mx-2"
+                src="./src/assets/pic/Logo.png"
+                alt="Logo"
+              />
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="row">
+        <main class="col-xl-12 main">
+          <div class="carousel">
+            <button class="arrow prev">⇦</button>
+            <div class="gallery"></div>
+            <button class="arrow next">⇨</button>
+          </div>
+          <div class="gallery__description">
+            Нажми на птицу чтобы узнать про нее больше
+          </div>
+        </main>
+      </div>
+      <div class="row">
+        <footer class="col-xl-12 footer">
+          <div class="git-hub">
+            <div>&copy 2022</div>
+            <div>
+              <a class="git-hub__link" href="https://github.com/alextes90"
+                >Alex Teslin</a
+              >
+            </div>
+          </div>
+          <div class="RS-logo border-radius-6">
+            <a href="https://rs.school/js/">
+              <img
+                class="RS-logo__img"
+                src="./src/assets/pic/rs_school_js.svg"
+                alt="Big Bird"
+            /></a>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
